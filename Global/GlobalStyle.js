@@ -20,17 +20,18 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: "#",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "start",
     paddingHorizontal: 10,
-    backgroundColor: color.SecondaryColor,
+    backgroundColor: color.PrimaryColor,
   },
   featureImage: {
-    flex: 1,
+    /*   flex: 1, */
     borderRadius: 5,
-    width: "100%",
-    resizeMode: "cover",
-    height: 300,
-    zIndex: 0,
+    width: 400,
+    /* resizeMode: "cover", */
+    height: 550,
+
+    /*   zIndex: 0, */
   },
   gradient: {
     flex: 1,
@@ -85,6 +86,55 @@ export default StyleSheet.create({
     borderRadius: 10,
     paddingHorizontal: 30,
     marginVertical: 10,
-    /* alignSelf: "flex-start", */
+  },
+  button: {
+    width: 300,
+    borderRadius: 3,
+    marginTop: 30,
+    alignSelf: "center",
+    backgroundColor: color.ButtonColor,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 15,
+  },
+  buttonText: {
+    fontWeight: "700",
+    color: color.TextColor,
+    letterSpacing: 1.9,
+    textTransform: "uppercase",
+  },
+  containerOverlay: { opacity: 0.5, backgroundColor: "rgba(0,0,0,0.1)" },
+  overlay: {
+    flex: 1,
+    width: 500,
+    color: color.TextColor,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  avatarStyle: {
+    width: 100,
+    height: 100,
+    marginTop: 10,
+    borderRadius: 50,
+
+    backgroundColor: color.PrimaryColor,
+    alignSelf: "center",
+  },
+  textStyle: {
+    marginTop: 10,
+    fontSize: 18,
+    color: color.TextColor,
+    backgroundColor: color.PrimaryColor,
+    fontWeight: "bold",
+    alignSelf: "center",
+  },
+  balanceContainer: {
+    padding: 10,
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
   },
 });
