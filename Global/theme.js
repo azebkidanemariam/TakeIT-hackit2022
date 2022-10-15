@@ -5,4 +5,5 @@ export const color = {
   SecondaryColor: "#E8BBAD",
   ThirdColor: "#F1F0ED",
   TextColor: "#101010",
+  ButtonColor: "#F1EFED",
 };
