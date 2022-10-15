@@ -11,7 +11,8 @@ import {
 import Style from "../../Global/GlobalStyle";
 import { useNavigation } from "@react-navigation/native";
 import SendPictureScreen from "./SendPictureScreen";
-import img from "../../assets/ocean.jpg";
+// import img from "../../assets/ocean.jpg";
+import img from "../../assets/images/imageLatest.jpg";
 
 const PictureViewScreen = () => {
   const navigation = useNavigation();
@@ -22,6 +23,7 @@ const PictureViewScreen = () => {
     <SafeAreaView style={Style.container}>
       <Pressable>
         <View>
+          {/* <Image source={img} style={Style.featureImage} /> */}
           <Image source={img} style={Style.featureImage} />
         </View>
         <Pressable onPress={GoToSendPicture} style={Style.button}>
