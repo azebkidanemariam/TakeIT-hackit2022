@@ -3,6 +3,7 @@ import { Text, View, SafeAreaView, StyleSheet, Pressable } from "react-native";
 import Style from "../../Global/GlobalStyle";
 import { useNavigation } from "@react-navigation/native";
 import PictureViewScreen from "./PictureViewScreen";
+import { GetAllUsers } from "../Api/api";
 const CameraScreen = () => {
   const navigation = useNavigation();
   const GoToPictureView = () => {
@@ -13,6 +14,10 @@ const CameraScreen = () => {
       <Pressable onPress={GoToPictureView}>
         <View>
           <Text>Camera Screen</Text>
+
+          <Pressable onPress={GetAllUsers}>
+            <Text>haloo ther</Text>
+          </Pressable>
         </View>
       </Pressable>
     </SafeAreaView>
