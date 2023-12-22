@@ -22,7 +22,14 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 10,
-    backgroundColor: color.SecondaryColor,
+    backgroundColor: color.PrimaryColor,
+  },
+  containerTwo: {
+    flex: 1,
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 10,
   },
   featureImage: {
     flex: 1,
@@ -70,13 +77,14 @@ export default StyleSheet.create({
   },
 
   paragraph: {
-    fontSize: 16,
-    fontWeight: "normal",
+    fontSize: 18,
+    fontWeight: "regular",
     paddingHorizontal: 20,
     color: color.TextColor,
     lineHeight: 25,
     letterSpacing: 0.1,
     fontFamily: "Arial",
+    marginVertical: 20,
   },
 
   image: {
@@ -85,6 +93,38 @@ export default StyleSheet.create({
     borderRadius: 10,
     paddingHorizontal: 30,
     marginVertical: 10,
-    /* alignSelf: "flex-start", */
   },
+
+  textCamera: {
+    fontSize: 26,
+    fontWeight: "bold",
+    fontFamily: "Arial",
+  },
+  buttonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    fontFamily: "Arial",
+  },
+
+  buttonShadow: {
+    borderRadius: 5,
+    backgroundColor: color.ThirdColor,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 30,
+    marginTop: 20,
+    color: "black",
+    padding: 10,
+    width: 275,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+  },
+  circle: {
+    borderRadius: 70,
+    backgroundColor: "#d9d9d9",
+    padding: 20,
+    marginBottom: 20,
+  },
+  camera: { width: 70, height: 70 },
 });
